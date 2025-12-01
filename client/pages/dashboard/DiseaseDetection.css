@@ -1,0 +1,130 @@
+/* Disease Detection - Green & White Theme */
+
+.disease-detection-wrapper {
+  min-height: calc(100vh - 4rem);
+  background: linear-gradient(to bottom, #ffffff, #e8f5e9);
+}
+
+.disease-detection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2e7d32;
+  letter-spacing: -0.025em;
+}
+
+.content-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.upload-card,
+.results-card {
+  background: white;
+  border: 1px solid #c8e6c9;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(46, 125, 50, 0.1);
+}
+
+.file-input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px dashed #66bb6a;
+  border-radius: 0.5rem;
+  background: #f1f8f4;
+  cursor: pointer;
+  color: #2e7d32;
+}
+
+.file-input:hover {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.preview-image {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  border: 1px solid #c8e6c9;
+}
+
+.result-label {
+  font-size: 0.875rem;
+  color: #558b2f;
+}
+
+.result-value {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+.progress-bar {
+  margin-top: 1rem;
+  height: 0.5rem;
+  width: 100%;
+  background: #e8f5e9;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(to right, #4caf50, #66bb6a);
+}
+
+.info-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info-card {
+  background: #fafafa;
+  border: 1px solid #c8e6c9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.15);
+}
+
+.info-title {
+  font-weight: 500;
+  color: #2e7d32;
+}
+
+.info-text {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #558b2f;
+  line-height: 1.5;
+}

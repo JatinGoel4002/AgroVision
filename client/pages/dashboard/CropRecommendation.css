@@ -1,0 +1,112 @@
+/* Color Theme: White and Green */
+:root {
+  --primary-green: #2d7a3e;
+  --light-green: #4caf50;
+  --pale-green: #e8f5e9;
+  --white: #ffffff;
+  --text-dark: #1b5e20;
+  --text-muted: #558b5c;
+  --border-color: #c8e6c9;
+  --shadow-color: rgba(45, 122, 62, 0.1);
+}
+
+.page-container {
+  min-height: calc(100vh - 4rem);
+  background: linear-gradient(to bottom, var(--white), var(--pale-green));
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.form-card {
+  margin-top: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.field-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.field-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.field-input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-color);
+  background: var(--white);
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: all 0.2s;
+  color: var(--text-dark);
+}
+
+.field-input:focus {
+  /* ring: 2px; */
+  border-color: var(--light-green);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+.result-card {
+  margin-top: 2rem;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+.result-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.result-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-green);
+  text-transform: capitalize;
+  margin-top: 0.25rem;
+}

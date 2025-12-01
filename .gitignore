@@ -1,0 +1,16 @@
+############################
+# Node / Express Server
+############################
+server/node_modules/
+
+############################
+# React Client
+############################
+client/node_modules/
+
+############################
+# Python / FastAPI ML Service
+############################
+ml_service/venv/
+
+.env

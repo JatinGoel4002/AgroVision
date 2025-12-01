@@ -1,0 +1,100 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2E7D32;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  background: #2E7D32;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: #2E7D32;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-primary,
+.btn-outline,
+.btn-ghost {
+  padding: 6px 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #2E7D32;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn-outline {
+  border: 1px solid #2E7D32;
+  background: transparent;
+  color: #2E7D32;
+  border-radius: 4px;
+}
+
+.btn-outline:hover {
+  background: #2E7D32;
+  color: white;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #2E7D32;
+}
+
+.btn-ghost:hover {
+  text-decoration: underline;
+}

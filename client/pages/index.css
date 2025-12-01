@@ -1,0 +1,390 @@
+/* Feature images for homepage cards */
+.feature-img {
+  width: 310px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #f0fdf4;
+}
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.index-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  color: #1a1a1a;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Main Content */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Hero Section - Two Column Layout */
+main > section:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  padding: 60px 0 100px;
+}
+
+/* Left Content Column */
+main > section:first-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 40px;
+}
+
+/* Badge */
+main > section:first-child > div:first-child span {
+  display: inline-block;
+  background-color: #d4f4dd;
+  color: #1e7b3a;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+/* Main Heading */
+main > section:first-child > div:first-child h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1e7b3a;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Description */
+main > section:first-child > div:first-child > p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0;
+  max-width: 540px;
+}
+
+/* Button Container */
+main > section:first-child > div:first-child > div {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+main > section:first-child > div:first-child > div button {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+main > section:first-child > div:first-child > div button:first-child {
+  background-color: #1e7b3a;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+main > section:first-child > div:first-child > div button:first-child:hover {
+  background-color: #176330;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 123, 58, 0.3);
+}
+
+main > section:first-child > div:first-child > div button:last-child {
+  background-color: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+}
+
+main > section:first-child > div:first-child > div button:last-child:hover {
+  border-color: #9ca3af;
+  background-color: #f9fafb;
+}
+
+/* Right Content Column - Feature Cards */
+main > section:first-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Single Top Card Container - Will hold the crop recommendation */
+main > section:first-child > div:last-child > div:first-child {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+main > section:first-child > div:last-child > div:first-child:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Grid Container for Disease Detection and AI Chat */
+main > section:first-child > div:last-child > div:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Individual Feature Cards */
+main > section:first-child > div:last-child > div:last-child > div {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.azure{
+  /* background-color: white; */
+  /* border: 1px solid #e5e7eb; */
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.azure div:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.azure div{
+  width: 20%;
+  height: 150px;
+  background: linear-gradient(135deg, #edf0ed 0%, #f4faf4 100%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  margin: 20px 0;
+  border-radius: 12px;
+
+}
+.azure div:hover{
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.azure div h3{
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 20px 24px 8px;
+  text-align: left;
+  color: #438643;
+}
+.azure div p{
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+  padding: 0 24px 20px;
+  line-height: 1.5;
+  text-align: left;
+  
+}
+main > section:first-child > div:last-child > div:last-child > div:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Feature Card Image Placeholders */
+main > section:first-child > div:last-child > div:first-child > div:first-child,
+main > section:first-child > div:last-child > div:last-child > div > div:first-child {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+}
+
+/* Crop Recommendation Card - Green Gradient */
+main > section:first-child > div:last-child > div:first-child > div:first-child {
+  background: linear-gradient(135deg, #a8d5a8 0%, #8bc68b 100%);
+}
+
+/* Disease Detection Card - Teal Gradient */
+main > section:first-child > div:last-child > div:last-child > div:nth-child(1) > div:first-child {
+  background: linear-gradient(135deg, #9ed4d1 0%, #7dbfbc 100%);
+}
+
+/* AI Chat Card - Purple/Blue Gradient */
+main > section:first-child > div:last-child > div:last-child > div:nth-child(2) > div:first-child {
+  background: linear-gradient(135deg, #b8b5e0 0%, #9d99d1 100%);
+}
+
+/* Card Text Content */
+main > section:first-child > div:last-child > div:first-child > p:first-of-type,
+main > section:first-child > div:last-child > div:last-child > div > p:first-of-type {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 20px 24px 8px;
+}
+
+main > section:first-child > div:last-child > div:first-child > p:last-of-type,
+main > section:first-child > div:last-child > div:last-child > div > p:last-of-type {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+  padding: 0 24px 20px;
+  line-height: 1.5;
+}
+
+/* Bottom Features Grid Section */
+main > section:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 80px 0;
+  background-color: transparent;
+}
+
+main > section:nth-child(2) > div {
+  background-color: white;
+  padding: 32px 28px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+main > section:nth-child(2) > div:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: #d1d5db;
+}
+
+main > section:nth-child(2) h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e7b3a;
+  margin: 0 0 12px 0;
+}
+
+main > section:nth-child(2) p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 48px 0;
+  color: #9ca3af;
+  font-size: 14px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  main > section:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  main > section:first-child {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 40px 0 80px;
+  }
+
+  main > section:first-child h1 {
+    font-size: 44px;
+  }
+
+  main > section:first-child > div:first-child {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 24px;
+  }
+
+  main > section:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+
+  main > section:first-child h1 {
+    font-size: 38px;
+  }
+
+  main > section:first-child > div:first-child > p {
+    font-size: 16px;
+  }
+
+  main > section:first-child > div:last-child > div:last-child {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  main > section:first-child > div:first-child > div {
+    flex-direction: column;
+  }
+
+  main > section:first-child > div:first-child > div button {
+    width: 100%;
+  }
+
+  main > section:first-child h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 16px;
+  }
+
+  main > section:first-child {
+    padding: 30px 0 60px;
+  }
+
+  main > section:first-child h1 {
+    font-size: 28px;
+  }
+
+  main > section:nth-child(2) {
+    padding: 60px 0;
+  }
+}
+.get-started-button {
+  background-color: #1e7b3a;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 16px 32px;
+}
